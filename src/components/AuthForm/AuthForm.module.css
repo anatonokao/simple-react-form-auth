@@ -40,6 +40,13 @@
     color: #171717;
 }
 
+label.checkbox {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    justify-content: flex-end;
+}
+
 .submitBtn {
     padding: 10px 30px;
     border-radius: 5px;
