@@ -11,6 +11,7 @@ export type Response = {
 
 const responseMock: Response = {code: 202, data: 'User Authorized'};
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export const fetchMock = (formData: LoginFormData): Promise<ResponsePromise> => {
     return new Promise((resolve) => {
         setTimeout(() => {
