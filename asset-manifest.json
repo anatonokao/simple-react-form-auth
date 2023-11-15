@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.bf8f3dc4.css",
-    "main.js": "/static/js/main.92f19e83.js",
-    "static/js/787.d63ef48f.chunk.js": "/static/js/787.d63ef48f.chunk.js",
-    "static/media/Loading.gif": "/static/media/Loading.e369711da181354eff25.gif",
-    "index.html": "/index.html",
-    "main.bf8f3dc4.css.map": "/static/css/main.bf8f3dc4.css.map",
-    "main.92f19e83.js.map": "/static/js/main.92f19e83.js.map",
-    "787.d63ef48f.chunk.js.map": "/static/js/787.d63ef48f.chunk.js.map"
+    "main.css": "/simple-react-form-auth/static/css/main.bf8f3dc4.css",
+    "main.js": "/simple-react-form-auth/static/js/main.621226ed.js",
+    "static/js/787.d63ef48f.chunk.js": "/simple-react-form-auth/static/js/787.d63ef48f.chunk.js",
+    "static/media/Loading.gif": "/simple-react-form-auth/static/media/Loading.e369711da181354eff25.gif",
+    "index.html": "/simple-react-form-auth/index.html",
+    "main.bf8f3dc4.css.map": "/simple-react-form-auth/static/css/main.bf8f3dc4.css.map",
+    "main.621226ed.js.map": "/simple-react-form-auth/static/js/main.621226ed.js.map",
+    "787.d63ef48f.chunk.js.map": "/simple-react-form-auth/static/js/787.d63ef48f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bf8f3dc4.css",
-    "static/js/main.92f19e83.js"
+    "static/js/main.621226ed.js"
   ]
 }
