@@ -1,16 +1,21 @@
 import {LoginFormData} from '../pages/AuthPage/AuthPage';
 
-interface Response {
+interface ResponsePromise {
     json: () => object
 }
 
-const responseMock = {code: 202, data: 'User Authorized'};
+export type Response = {
+    code: number,
+    data: string
+}
 
-export const fetchMock = (formData: LoginFormData): Promise<Response> => {
+const responseMock: Response = {code: 202, data: 'User Authorized'};
+
+export const fetchMock = (formData: LoginFormData): Promise<ResponsePromise> => {
     return new Promise((resolve) => {
         setTimeout(() => {
-            return resolve({json: () => responseMock});
-        }, 2000);
+            return resolve({json: (): Response => responseMock});
+        }, 3500);
     });
 };
 //
