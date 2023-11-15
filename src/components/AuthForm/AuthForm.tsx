@@ -21,6 +21,7 @@ const AuthForm: FC<AuthFormProps> = ({ authUser, isAuth, isLoad }) => {
   ) => {
     e.preventDefault();
     const form = e.currentTarget;
+    e.currentTarget.reset();
     const { login, password, rememberMe } = form;
 
     authUser({
