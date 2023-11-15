@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import AuthForm from '../../components/AuthForm/AuthForm';
-import { fetchMock } from '../../API/AuthUser';
+import { fetchMock, Response } from '../../API/AuthUser';
 
 export type LoginFormData = {
   login: string;
@@ -8,15 +8,25 @@ export type LoginFormData = {
   rememberMe: boolean;
 };
 const AuthPage = () => {
-  const [load, setLoad] = useState(false);
+  const [isLoad, setIsLoad] = useState(false);
+  const [isAuth, setIsAuth] = useState(false);
   const authUser = async (formData: LoginFormData) => {
-    console.log(formData);
-    await fetchMock(formData).then((res) => console.log(res.json()));
+    setIsLoad(true);
+    setIsAuth(false);
+    await fetchMock(formData)
+      .then((res): Response => {
+        return res.json() as Response;
+      })
+      .then((res) => {
+        if (res.code === 202) setIsAuth(true);
+        console.log(res);
+        setIsLoad(false);
+      });
   };
 
   return (
     <div className={'_container'}>
-      <AuthForm authUser={authUser} />
+      <AuthForm authUser={authUser} isAuth={isAuth} isLoad={isLoad} />
     </div>
   );
 };
