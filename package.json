@@ -62,5 +62,6 @@
     "trailingComma": "es5",
     "printWidth": 80,
     "arrowParens": "always"
-  }
+  },
+  "homepage": "https://anatonokao.github.io/simple-react-form-auth/"
 }
